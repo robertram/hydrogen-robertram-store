@@ -8,9 +8,8 @@ import gql from 'graphql-tag';
 
 import {Link} from '../components/Link.client';
 import Layout from '../components/Layout.server';
-import FeaturedCollection from '../components/FeaturedCollection.server';
 import ProductCard from '../components/ProductCard.server';
-import Welcome from '../components/Welcome.server';
+import Hero from '../components/Hero.server';
 
 function GradientBackground() {
   return (
@@ -86,7 +85,7 @@ export default function Index({country = {isoCode: 'US'}}) {
   return (
     <Layout hero={<GradientBackground />}>
       <div className="relative mb-12">
-        <Welcome />
+        <Hero featuredProductsCollection={featuredProductsCollection}/>
         <div className="bg-white p-12 shadow-xl rounded-xl mb-10">
           {featuredProductsCollection ? (
             <>
@@ -121,7 +120,6 @@ export default function Index({country = {isoCode: 'US'}}) {
             </>
           ) : null}
         </div>
-        <FeaturedCollection collection={featuredCollection} />
       </div>
     </Layout>
   );
