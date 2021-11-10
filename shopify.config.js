@@ -1,6 +1,6 @@
 export default {
   locale: 'en-us',
-  storeDomain: 'hydrogen-preview.myshopify.com',
-  storefrontToken: '3b580e70970c4528da70c98e097c2fa0',
+  storeDomain: 'robertramstore.myshopify.com',
+  storefrontToken: '52e867b33642ad20dc1fac40e97c7bad',
   graphqlApiVersion: 'unstable',
 };
